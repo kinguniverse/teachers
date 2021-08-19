@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+            
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Scince Button</title>
+    <style>
+             body{
+            background-color:gainsboro;
+        }
+        header{
+            background-color:teal;
+            text-align: center;
+        }
+        h1{
+            text-shadow:5px 4px 3px grey;
+            color: white;
+        }
+        .ht{
+            background-color:honeydew;
+            border: 2px solid black;
+        }
+        .ht:hover{
+            background-color:lightblue;
+            color: black;
+            text-shadow:5px 4px 3px burlywood;
+        }
+        .card:hover{
+          box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75); 
+
+         }
+        *{
+               padding: 0;
+               margin: 0;
+               text-decoration: none;
+               list-style: none;
+           }
+           
+           ul{
+               float: right;
+               margin-right: 40px;
+           }
+           li{
+               display: inline-block;
+           }
+           a{
+               text-transform: uppercase;
+           }
+           #hrt{
+               background-color: darkslategray;
+           }
+             #main{
+               overflow: auto;
+               padding-bottom: 100px;
+           }
+           #footer{
+               background-color: darkslategray;
+               position: relative;
+               height: 100px;
+               margin-top: -100p;
+               clear: both;
+           }
+   </style>
+   
+</head>
+<body>
+    
+<div class="container-fluit">
+    <header id="hrt">
+        <br>
+         <ul><li><a href="../contact.html">Contact</a></li></ul>
+        <ul><li><a href="../about.html">About</a></li></ul>
+        <ul><li><a href="../index.html">Home</a></li></ul>
+       
+       </ul><br><br>
+    </header>
+</div>
+<header><br><br><h1><b>Science Book</b></h1><br><br></header><br><br>
+
+<!-- cntainer start now -->
+<div class="container">
+    
+<!-- select tag -->
+<select onchange=myfun(this.value)>
+    <option value="#">select subject</option>
+<option value="https//www.google.com">General Science</option>
+
+</select>
+<div class="row">
+    
+<div class=" col-6 col-lg-3 col-xl-3 mt-3" id="demo">
+    <div class="card">
+    <div class="card-body ht">
+    <h4 class="card-title">Physics</h4>
+    <a href="pysics.html"><button class="btn-primary d-block">Read Now</button></a>     
+    </div>
+    </div>
+</div>
+
+
+     
+<div class=" col-6 col-lg-3 col-xl-3 mt-3" id="demo">
+    <div class="card">
+    <div class="card-body ht">
+    <h4 class="card-title">Chemestry</h4>
+    <a href="#"><button class="btn-primary d-block">Read Now</button></a>     
+    </div>
+    </div>
+</div>
+     
+<div class=" col-6 col-lg-3 col-xl-3 mt-3" id="demo">
+    <div class="card">
+    <div class="card-body ht">
+    <h4 class="card-title">Boilogy</h4>
+    <a href="#"><button class="btn-primary d-block">Read Now</button></a>     
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+<!--  start footer    -->
+<br><br><br>
+<footer id="f">
+    <br>
+               <ul><li><a href="../term.html">term and condition</a></li></ul>
+              <ul><li><a href="../privacy.html">Privacy policy</a></li></ul>
+              
+             
+             </ul><br><br>
+      </footer>
+
+      <!-- script  -->
+      <script>
+          function myfun(src){
+              window.location=src;
+          }
+      </script>
+</body>
+</html>

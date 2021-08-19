@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Circumference (Paridhi) Of Circle</title>
+
+    <style>
+          body{
+          background-image: linear-gradient(to left,pink,lightblue);
+        }
+        input{
+            border: 2px solid black;
+        }
+        h1{
+            text-shadow: 5px 4px 3px pink;
+
+            color: blue;
+        }
+        button{
+            border: 2px solid black;
+         }
+         #first{
+             border:2px solid black;
+             background-color: darksalmon;
+         }#second{
+            border:2px solid black;
+            background-color: darkseagreen;
+         }
+         *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        ul{
+            float: right;
+            margin-right: 40px;
+        }
+        li{
+            display: inline-block;
+        }
+        a{
+            text-transform: uppercase;
+        }
+        #hrt{
+            background-color: darkslategray;
+        }
+          #main{
+            overflow: auto;
+            padding-bottom: 100px;
+        }
+        #footer{
+            background-color: darkslategray;
+            position: relative;
+            height: 100px;
+            margin-top: -100p;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="container-fluit">
+    <header id="hrt">
+        <br>
+         <ul><li><a href="../contact.html">Contact</a></li></ul>
+        <ul><li><a href="../about.html">About</a></li></ul>
+        <ul><li><a href="../index.html">Home</a></li></ul>
+       
+       </ul><br><br>
+    </header>
+</div>
+    <div class="container">
+        <h1><b>Math Book : Circumference (Paridhi) Of Circle</b></h1>
+        <br><br>
+        <div class="row">
+            <!-- start Row one -->
+            
+            <div class="col-xl-6 col-lg-6 col-md-6  text-center"> 
+                <fieldset id="first"> <br><br>
+                <label for=""><b>Enter Redius Value</b></label><br>
+                <input type="text" name="" id="a"><br><br>
+                <button onclick="myfun()">Show Result</button><br><br><br>
+            </fieldset>
+
+                <!-- close row one -->
+            </div>
+            <!-- start second row-->
+           
+            <div class="col-xl-6 col-lg-6 col-md-6 text-center">
+                <fieldset id="second"> <br><br>
+                <label for=""><b>Enter Diameter (Vyas) Value</b></label><br>
+                <input type="text" name="" id="b"><br><br>
+                <button onclick="mygun()">Show Result</button><br><br><br>
+             </fieldset>
+
+            </div>
+            <!-- close second row -->
+        </div>
+    </div>
+
+<!--  start footer    -->
+<br><br><br>
+<footer id="footer">
+    <br>
+               <ul><li><a href="../term.html">term and condition</a></li></ul>
+              <ul><li><a href="../privacy.html">Privacy policy</a></li></ul>
+              
+             
+             </ul><br><br>
+      </footer>
+    <script>
+        // row one function start
+        function myfun(){
+            const x=document.getElementById('a').value;
+            const z=(2*22/7)*x;
+            alert(`Circumference (Paridhi) Value is = ${z}`)
+        }
+        // row one function close
+
+        // secont row functionn start
+        function mygun(){
+            const s=document.getElementById('b').value;
+            const k=s*22/7;
+            alert(`Circumference (Paridhi) value is = ${k}`)
+    }
+        // second row function close
+    </script>
+</body>
+</html>
