@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>keshab</title>
+    <style>
+           
+         body{
+            background-image: linear-gradient(to left,pink,lightblue);
+        }
+        #header{
+            color:black;
+            text-shadow: 5px 4px 3px whitesmoke;
+        }
+        #result{
+            font-size: large;
+            margin-top: 100px;
+        }
+        div{
+             
+            margin-top: 20px;
+        }
+        #hrt{
+            display:inline-flex;
+            background-color: red;
+            
+        }
+        *{box-sizing: border-box;
+                      padding: 0;
+                      margin: 0;
+                      text-decoration: none;
+                      list-style: none;
+                  }
+                  li{
+                      margin-left: 10px;
+                      display:flex;
+                  }
+                  #heads{
+                      background-color: lightcoral;
+                  }
+                  #keshab{
+                      background-color: lightgreen;
+                      display: flex;
+                  }
+                
+ 
+        </style>
+
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+<body>
+    <header id="keshab">
+        <br><br><br> 
+         <ul><li><a href="https://kinguniverse.github.io/teachers/contact.html"><b><b><b>Contact</b></b></b></a></li></ul>
+        <ul><li><a href="https://kinguniverse.github.io/teachers/about.html"><b><b><b>About</b></b></b></a></li></ul>
+        <ul><li><a href="https://kinguniverse.github.io/teachers/"><b><b><b>Home</b></b></b></a></li></ul>  
+ 
+       </ul><br>
+       <center><h1 ><b><b><b><i>Write a story</i></b></b></b></h1></center>
+
+    </header>
+    
+    
+    
+    
+<!--     
+    <div  id="heads">
+    <div class="container-fluit" >
+        <header id="hrt">
+            <br>
+             <ul><li><a href="https://kinguniverse.github.io/teachers/contact.html">Contact</a></li></ul>
+            <ul><li><a href="https://kinguniverse.github.io/teachers/about.html">About</a></li></ul>
+            <ul><li><a href="https://kinguniverse.github.io/teachers/">Home</a></li></ul>
+           
+           </ul><br><br>
+        </header>
+    </div>
+
+</div> -->
+ <!-- <center><h1 ><b><b><b><i>My Dream World</i></b></b></b></h1></center> -->
+ <div class="container">
+   
+        <!-- <p id="p">this is praraph  </p> -->
+       <center> <textarea   name="" id="title" cols="18" rows="1" placeholder="Title"></textarea></center>
+      <center><h1 id="header"><b><b></b></b></h1></center> 
+            <span id="result">  <span>
+            <form action="#">
+            <div class="form-group">
+         <textarea id="txt" placeholder="keshab" name="" id="" cols="30" rows="10" class="form-control"> </textarea>
+            </div>      
+             </form>
+            <br>
+            <br>
+            <button class="btn btn-outline-primary" id="btnclic"><b><b>Make Pdf</b></b></button>
+
+
+            <br><br><br>
+
+         </div>
+
+
+ 
+ 
+
+
+
+    <!-- container close -->
+</div>
+<br><br><br><br>
+ <div class="container mt-10">
+    <button class="btn btn-outline-primary" id="print" onclick="myfun()"><b><b>print</b></b></button>
+
+ </div>
+ <div id="google_translate_element"></div><br>
+
+<br><br><br>
+    <script type = "text/javascript" language = "javascript">
+      $(document).ready(function(){
+          $('#btnclic').click(function(){
+
+              var a=$('#txt').val();
+              $('#result').text(a);
+             
+          });  
+      });
+
+      $(document).ready(function(){
+          $('#btnclic').click(function(){
+              var b=$('#title').val();
+              $('#header').text(b);
+            });
+            $('#btnclic').click(function(){
+             
+              $('#title').hide();
+        });
+        
+    });
+
+ $(document).ready(function(){
+     $('#btnclic').click(function(){
+         $('#h').hide();
+     })
+ })
+
+
+ $(document).ready(function(){
+     $('#btnclic').click(function(){
+         $('#keshab').hide();
+     })
+ })
+
+
+
+        function myfun(){
+            window.print();
+        }
+       
+     </script>
+
+</body>
+
+</html>

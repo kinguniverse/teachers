@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upploading a capture</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    img{
+        height:240px;
+        width:320px;
+        border-radius: 10px;
+        box-shadow: 0 0 12rem rgba(0,0, 0, 0.25);
+        margin: 10px;
+    }
+   
+    #clear{
+        margin-left: 15px;
+         
+    }
+    #print{
+        margin-top: 20px;
+        margin-left: 15px; 
+    }
+</style>
+
+</head>
+<body>
+
+    <div class="container" >
+    
+       
+            <form  action="" id="form"   enctype="multipart/form-data" method="POST">
+                <div id="main">
+            <div class="form-group mt-3" >
+                <input type="file" name="" id="image">
+            </div>
+            <div class="form-group mt-3">
+                <button class="btn btn-outline-primary"><b><b><b>upload</b></b></b></button>
+                 
+
+
+
+                <button  id="clear" onclick="remove()" class="btn btn-outline-danger mt-3 "><b><b><b>Clear All</b></b></b></button>
+        
+                <button class="btn btn-outline-dark " id="print" onclick="myfun('king')"><b><b><b>print</b></b></b></button>
+            
+    
+
+            </div>
+
+            </form>
+
+<!--             
+            <button  id="clear" onclick="remove()" class="btn btn-outline-danger mt-3 "><b><b><b>Clear All</b></b></b></button>
+        
+            <button class="btn btn-outline-dark " id="print" onclick="myfun('king')"><b><b><b>print</b></b></b></button>
+         -->
+        </div>
+             <hr>
+            <div id="king">
+            <div id="result"></div>
+        </div>   
+<!--        
+         <button class="btn btn-outline-primary m-auto d-block" onclick="myfun('king')"><b><b><b>print</b></b></b></button> -->
+    </div>
+
+
+    <script>
+
+        var form=document.getElementById('form');
+        var parientDiv= document.getElementById('result')
+        form.addEventListener('submit',function(event){
+            event.preventDefault();
+            var reader=new FileReader;
+
+            var name =document.getElementById('image').files[0].name
+
+        reader.addEventListener('load',function(){
+            if (this.result && localStorage) {
+                window.localStorage.setItem(name,this.result)
+                alert('image storage on local storage')
+                parientDiv.innerHTML=''
+                showImages();
+            }
+            else{
+                alert('Not success full')
+            }
+        })
+
+
+        reader.readAsDataURL(document.getElementById('image').files[0])
+            console.log(name);
+
+
+
+        })
+
+
+        function showImages(){
+            for(let i=0;i<window.localStorage.length;i++){
+                let res=window.localStorage.getItem(window.localStorage.key(i))
+                var image=new Image()
+                image.src=res;
+                parientDiv.appendChild(image)
+
+            }
+        }
+
+        function remove(){
+            window.localStorage.clear();
+            parientDiv.innerHTML=''
+        }
+
+        showImages();
+        
+
+
+        function myfun(el){
+            var a=document.body.innerHTML;
+            var b=document.getElementById(el).innerHTML;
+            document.body.innerHTML=b;
+        window.print();
+        document.body.innerHTML=a;
+    }
+    </script>
+   
+</body>
+</html>
