@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Download</title>
+</head>
+<body>
+    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+    <br>
+    <button id="button">Download File</button>
+    <script>
+        var button=document.getElementById('button');
+        button.addEventListener('click',function(e){
+            var textareaVal=document.getElementById('textarea').value;
+            var filename="k.js";
+            download(textareaVal,filename)
+
+
+        })
+
+        function download(textareaVal,filename){
+            var element=document.createElement('a');
+            element.setAttribute('href','data:text/plain;charset=utf-8,'+encodeURIComponent(textareaVal));
+            element.setAttribute('download',filename);
+            element.style.display='none';
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element);
+        }
+
+    </script>
+</body>
+</html>
