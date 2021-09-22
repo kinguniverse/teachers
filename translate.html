@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,30 +8,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   
-    
-   
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+    <!-- translator plugin -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+        </script>
+        
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
         <style>
 
-   
-   
-
 
 body{
- background-image: url('d5.jpg');
-            }
-        #he{
- background-image: url('header.jfif');
+ background-image: url('d5.jpg');     
+   }
+        header{
+            background-color:teal;
             text-align: center;
         }
         h1{
@@ -95,10 +89,14 @@ body{
         p{
             color: white;
         }
-            .texm{
-                color:white;
-                
-            }
+        #show{
+            background-color:white;
+            font-size: x-large;
+            border: 2px solid black;
+
+        }
+       
+        
         </style>
 </head>
 <body>
@@ -114,37 +112,27 @@ body{
             </header>
         </div>
 
-        <header id="he"><br><h1><b>Text translator</b><br><br></h1></header><br><br>
+        <header id="t"><br><br><h1><b>My Text translator</b></h1><br><br></header><br><br>
 
-
-
- 
-    
 
     <div class="container">
         <p><b>step 1</b> write here <b>step 2</b> Click here <b>step 3</b> choose your pageLanguage</p>
         <br><br>
-     <textarea name="" id="tex" cols="35" rows="10" placeholder=" write here"></textarea>
+        <div id="show" class="text-center"></div>
+
+     <textarea name="" id="tex" cols="40" rows="10" placeholder=" write here" class="form-control"></textarea>
 
     <br><br>
     <button id="btn" class="btn btn-danger">Click Here</button>
     <br><br><br><br>
-    <div id="show" class="texm"></div>
+    <!-- <div id="show"></div> -->
     <br><br>
-    <br> <br>
-       <div id="google_translate_element"></div>
-
+    <a href="#"><div id="google_translate_element"></div></a>
 
 </div>
             
 <!--  start footer    -->
 <br><br><br>
-         
-
- 
-    
-    
-    
 <footer id="f">
     <br>
                <ul><li><a href="term.html">term and condition</a></li></ul>
@@ -166,6 +154,11 @@ body{
                 });
                 $('#btn').click(function(){
                     $('#tex').hide();
+                    $('#hrt').hide();
+                    $('p').hide();
+                    $('#t').hide();
+                    $('#btn').hide();
+
                 })
 
             })
