@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>  Period Table with mass </title>
+</head>
+<style> 
+    body{
+        /* background-image: url('d5.jpg');    */
+ background-color:lightblue;        
+    
+    }
+           #he{
+        /* background-image: url('header3.jfif');      */
+        background-color: aqua;
+
+          text-align: center;
+          
+          width:100%;
+            height:100%;
+        /* height:calc(100% -1px); */
+
+             background-size:cover;
+             
+           }
+           h1{
+               text-shadow:5px 4px 3px grey;
+               color: whitesmoke;
+               text-shadow: 5px 4px 3px black;
+           }
+           .ht{
+               background-color:honeydew;
+               border: 2px solid black;
+               border-radius: 10%;
+           }
+           /* .ht:h{
+               background-color:lightblue;
+               color: black;
+               text-shadow:5px 4px 3px white;
+           } */
+           .card:hover{
+             box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75); 
+        
+            }
+           *{
+                  padding: 0;
+                  margin: 0;
+                  text-decoration: none;
+                  list-style: none;
+              }
+              select{
+       padding: 5px;
+       border: 2px solid black;
+     }
+              
+              ul{
+                  float: right;
+                  margin-right: 40px;
+              }
+              li{
+                  display: inline-block;
+              }
+              a{
+                  text-transform: uppercase;
+                  color: white;              }
+              #hrt{
+                  background-color: blue;
+              }
+                #main{
+                  overflow: auto;
+                  padding-bottom: 100px;
+              }
+              #f{
+                  background-color: darkslategray;
+                  position: relative;
+                  height: 100px;
+                  margin-top: 100px;
+                  clear: both;
+              }
+              h4{
+                  color: blue;
+                  font-size: 25px;
+              }
+              p{
+                  font-size:20px;
+              }
+              hr{
+                  color: red;
+              }
+              tbody{
+                  background-image: linear-gradient(to left,LIGHTGREEN,pink);
+    
+              }
+              table,td,th{
+                  border:5px solid white;
+              }
+              
+              </style>
+              
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+<body>
+
+    <div class="container-fluit">
+        <header id="hrt">
+            <br>
+             <ul><li><a href="https://kinguniverse.github.io/teachers/contact.html"><b><b><b>Contact</b></b></b></a></li></ul>
+            <ul><li><a href="https://kinguniverse.github.io/teachers/about.html"><b><b><b>About</b></b></b></a></li></ul>
+            <ul><li><a href="https://kinguniverse.github.io/teachers/"><b><b><b>Home</b></b></b></a></li></ul>
+           
+           </ul><br><br>
+        </header>
+    </div>
+    <header id="he"><br><h1><b> SI UNIT <br><br></b></h1></header>
+    
+ 
+<!-- <header id="hes"><br><h1><br><b> Paper Set 1 <br><br></b></h1></header> -->
+
+
+<div class="container">
+    <br><br>
+    <br>
+<!-- select tag is started -->
+  <table class=" table  text-center table-hover  ">
+      <tr>
+          <th>PHYSICAL QUANTITY</th>
+          <th>SI UNIT</th>
+      </tr>
+      <tr>
+          <td>Force</td>
+          <td>Newton</td>
+      </tr>
+
+      <tr>
+        <td>Energy </td>
+        <td>Joule</td>
+    </tr>
+
+
+    <tr>
+        <td>Mass</td>
+        <td>Kilogram</td>
+    </tr>
+
+
+    <tr>
+        <td>Electric Current</td>
+        <td>Ampere</td>
+    </tr>
+
+
+    <tr>
+        <td>Area</td>
+        <td>Squar Meter</td>
+    </tr>
+
+
+    <tr>
+        <td>Length</td>
+        <td>Metre</td>
+    </tr>
+
+
+    <tr>
+        <td>Volume</td>
+        <td>Cubic Meter</td>
+    </tr>
+
+
+    <tr>
+        <td>Time</td>
+        <td>Second</td>
+    </tr>
+
+
+    <tr>
+        <td>Velocity</td>
+        <td>Meter/Second</td>
+    </tr>
+
+
+    <tr>
+        <td>Pressure</td>
+        <td>Pascal</td>
+    </tr>
+
+
+    <tr>
+        <td>Electric Power</td>
+        <td>Kilo Watt Hour</td>
+    </tr>
+
+
+    <tr>
+        <td>Power</td>
+        <td>Joule/second And Watt</td>
+    </tr>
+
+
+    <tr>
+        <td>Work</td>
+        <td>Newton-Meter And Joule</td>
+    </tr>
+
+
+    <tr>
+        <td>Density</td>
+        <td>Kg/m<sup>3</sup></td>
+    </tr>
+
+
+    <tr>
+        <td>Temperature</td>
+        <td>Kelvin</td>
+    </tr>
+
+
+    <tr>
+        <td>Heat</td>
+        <td>Joule</td>
+    </tr>
+
+
+    <tr>
+        <td>Electric charge</td>
+        <td>coulomb</td>
+    </tr>
+
+
+    <tr>
+        <td>Electric resistance</td>
+        <td>Ohm</td>
+    </tr>
+
+
+    <tr>
+        <td>Latent Heat</td>
+        <td>Joule/k</td>
+    </tr>
+
+
+    <tr>
+        <td>Viscosity</td>
+        <td>Newton-sec.metre<sup>-2</sup></td>
+    </tr>
+
+
+    <tr>
+        <td>Electric Potential</td>
+        <td>Volt</td>
+    </tr>
+
+
+    <tr>
+        <td>Surface Tension</td>
+        <td>Newton/Meter</td>
+    </tr>
+
+
+    <tr>
+        <td>Sp. Heat Capacity</td>
+        <td>Joule/kg-K</td>
+    </tr>
+
+
+    <tr>
+        <td>Moment of Inertia</td>
+        <td>Kg.m<sup>2</sup></td>
+    </tr>
+
+
+    <tr>
+        <td>Luminous Intensity</td>
+        <td>Lumen</td>
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </table>
+ 
+<!--  
+<div class="container">
+    <div class="row">
+ 
+ -->
+
+        <!-- row and container close -->
+    </div>
+</div>
+
+
+
+
+
+        <br><br>
+<!--  
+         container close 
+      </div> -->
+
+<br><br>
+
+<div id="google_translate_element"></div><br>
+<br>
+
+</div>
+  
+    <br><br>
+    
+<div class="container">
+    <ul class="pagination">
+    <li class="page-item active"><a href="si.html" class="page-link">1</a></li>
+    <li class="page-item "><a href="si2.html" class="page-link">2</a></li>
+    
+   
+    </ul>
+    </div>
+    
+    <br>
+    <footer id="f">
+        <br>
+                   <ul><li><a href="https://kinguniverse.github.io/teachers/term.html">term and condition</a></li></ul>
+                  <ul><li><a href="https://kinguniverse.github.io/teachers/privacy.html">Privacy policy</a></li></ul>
+                  
+                 
+                 </ul><br><br>
+          </footer>
+
+
+  <!-- script  -->
+  <script>
+    function select(src){
+        window.location=src;
+    }
+</script>
+
+
+ </body>
+</html>
