@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
     <title>Table</title>
     <style>
         body{
-            background-image:url('d5.jpg');
+            background-image: linear-gradient(to left,lightgreen,grey);
         }
         .div1{
             text-align: center;
@@ -49,6 +49,7 @@
         }
         a{
             text-transform: uppercase;
+            color: white;
         }
         #hrt{
             background-color: darkslategray;
@@ -61,17 +62,10 @@
             background-color: darkslategray;
             position: relative;
             height: 100px;
-            margin-top: -100p;
+            margin-top: 100px;
             clear: both;
         }
     </style>
-    <script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
     
@@ -86,27 +80,20 @@ function googleTranslateElementInit() {
        </ul><br><br>
     </header>
 </div>
-
-    <div class="div1">
-        <div id="google_translate_element"></div>
-
-        <fieldset>
-        <h1><i><b>Math Book : Table</b></i></h2><br>
+<h1 class="bg-primary text-center text-white"><br><b><b><b>Math Book : Table</b></b></b><br><br></h1><br><br>
+    <div class="container div1">
+        <fieldset class="bg-white">
+       <br><br>
         <form action="">
-            <label for=""><i><b>Enter Table Number</b></i></label><br><br>
+            <label for=""><h4 class="text-dark"><b><b><b>Enter Table Number</b></b></b></h4></label><br>
         <input type="text" name="" id="table"><br><br>
         <input type="button" class="btn btn-dark" value="showTable" onclick="cal()" id="btn">
-        </form>
+        </form><br>
     </fieldset>
     </div>
     
 <!--  start footer    -->
-<br>
- 
-    
-    
-    
-    <br><br>
+<br><br><br>
 <footer id="footer">
     <br>
                <ul><li><a href="../term.html">term and condition</a></li></ul>
