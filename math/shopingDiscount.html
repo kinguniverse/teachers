@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +7,12 @@
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    
-    <title>shopingDiscount</title>
+    <title> Click And Show Percentage</title>
     <style>
         body{
-            background-image:url('d5.jpg');
+            /* background-color:#e0e0e0; */
+            background-image: linear-gradient(to left,lightgreen,grey);
+
         }
         div{
             text-align: center;
@@ -48,6 +50,7 @@
         }
         a{
             text-transform: uppercase;
+            color: white;
         }
         #hrt{
             background-color: darkslategray;
@@ -64,13 +67,6 @@
             clear: both;
         }
     </style>
-    <script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
     
@@ -85,31 +81,23 @@ function googleTranslateElementInit() {
     </header>
 </div>
     <div>
-        <div id="google_translate_element"></div>
-<br>
-        <fieldset>
-        <h1><i><b>Math Book : Parcentage</b></i></h1>
-        <label for=""><i><b>Enter Your Value</b></i></label><br>
+        <h1 class="text-center bg-primary"><br><b><b><b>Math Book : Parcentage</b></b></b><br><br></h1>
+<br><br><br>
+        <div class="container">
+        <fieldset class="text-center bg-white">
+    <br><br>
+        <label for=""><h4 class="text-dark"><b><b><b>Enter Your Value</b></b></b></h4></label><br>
         <input type="text" id="amount"><br><br>
-        <label for=""><i><b>Enter Your parcentage(%) Value</b></i></label><br>
+        <label for=""><h4 class="text-dark"><b><b><b>Enter Your parcentage(%) Value</b></b></b></h4></label><br>
         <input type="text" id="dic"><br><br>
-        <input type="button" class="btn btn-dark" value="My Amount" onclick="cal()">
+        <input type="button" class="btn btn-dark" value="My Amount" onclick="cal()" >
         <br><br><br>
     </fieldset>
     </div>
-    <hr>
+    
     
 <!--  start footer    -->
-<br>
- 
-    
-    
-    
-    
-    
-    
-    
-    <br><br>
+<br><br><br>
 <footer id="footer" style="background-color: none;">
     <br>
                <ul><li><a href="../term.html">term and condition</a></li></ul>
