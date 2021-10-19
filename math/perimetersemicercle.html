@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +21,7 @@
 
     <style>
         body{
-            background-image:url('d5.jpg');
+            background-image: linear-gradient(to left,lightgreen,grey);
         }
         input{
             border: 2px solid black;
@@ -50,6 +50,7 @@
         }
         a{
             text-transform: uppercase;
+            color: white;
         }
         #hrt{
             background-color: darkslategray;
@@ -66,13 +67,6 @@
             clear: both;
         }
     </style>
-    <script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
     
@@ -86,16 +80,17 @@ function googleTranslateElementInit() {
        </ul><br><br>
     </header>
 </div>
-
+<h1 class="bg-primary text-center text-white"><br><b><b><b>Math Book : Perimeter Of Semi Circle</b></b><br><br></b></h1>
     <div class="container">
-        <div id="google_translate_element"></div><br>
-
-        <h1><b>Math Book : Perimeter Of Semi Circle</b></h1><br><br>
-        <label for=""><b>Enter Redius value</b></label><br>
+      <br><br>
+      <fieldset class="bg-white text-center"><br><br>
+        <label for=""><h4><b><b><b>Enter Redius value</b></b></b></h4></label><br>
         <input type="text" name="" id="a"><br><br>
-        <button onclick="myfun()" class="btn btn-primary">Result</button>
+        <button onclick="myfun()" class="btn btn-dark">Result</button>
+        <br><br><br>
+    </fieldset>
 </div>
-    </div>
+
  
         <script>
             function  myfun(){
@@ -105,16 +100,6 @@ function googleTranslateElementInit() {
 
             }
         </script>
-
-
-
-
-
-
-
-
-
- 
-    
+    </div>
 </body>
 </html>
