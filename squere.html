@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+       <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+      
+
+   
+    <title>Squere</title>
+    <style>
+        body{
+            background-image: linear-gradient(to left,lightgreen,grey);
+        }
+        div{
+            text-align: center;
+        }
+        h1{
+            color:lightblue;
+            text-shadow:5px 4px 3px fuchsia;
+        }
+        input{
+            border: 2px solid black;
+            padding: 5px;
+        }
+        label{
+            color:  blanchedalmond;
+            font-size: large;
+        }
+        fieldset{
+            background-color:#0a183d;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        ul{
+            float: right;
+            margin-right: 40px;
+        }
+        li{
+            display: inline-block;
+        }
+        a{
+            text-transform: uppercase;
+            color: white;
+        }
+        #hrt{
+            background-color: darkslategray;
+        }
+          #main{
+            overflow: auto;
+            padding-bottom: 100px;
+        }
+        #footer{
+            background-color: darkslategray;
+            position: relative;
+            height: 100px;
+            margin-top: 100px;
+            clear: both;
+        }
+       
+    </style>
+
+     <!-- translator plugin -->
+     <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+        </script>
+        
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    
+<div class="container-fluit">
+    <header id="hrt">
+        <br>
+         <ul><li><a href="../contact.html">Contact</a></li></ul>
+        <ul><li><a href="../about.html">About</a></li></ul>
+        <ul><li><a href="../index.html">Home</a></li></ul>
+       
+       </ul><br><br>
+    </header>
+</div>
+<h1 class="bg-primary text-center text-white"><br><b><b><b>Math Book : Square</b></b></b><br><br></h1>
+<br>
+<div id="google_translate_element"></div>
+    <div class="container"><center>
+       
+          
+        <fieldset class="bg-white text-center">
+            <br><br>
+
+
+             
+            <label for=""><h4 class="text-dark"><b><b><b>Enter Square Value</b></b></b></h4></label><br>
+            <input type="text" name="" id="t"><br><br>
+            <input type="button" class="btn btn-dark" value="showSquare" onclick="btn()">
+            <br><br>
+        </fieldset>
+           
+
+        </div>
+        </center>
+      
+
+    </div><hr>
+    
+<!--  start footer    -->
+<br><br><br>
+<footer id="footer">
+    <br>
+               <ul><li><a href="../term.html">term and condition</a></li></ul>
+              <ul><li><a href="../privacy.html">Privacy policy</a></li></ul>
+              
+             
+             </ul><br><br>
+      </footer>
+    <script>
+        function btn(){
+            let a =document.getElementById('t').value;
+            const b=a*a;
+            alert(`Square is = ${b}`);
+        }
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

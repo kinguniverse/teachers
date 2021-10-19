@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <title>Rectangle  Perimeter</title>
+    <style>
+        body{
+            background-color: rosybrown;
+        }
+        input{
+            border: 2px solid black;
+        }
+        h2{
+            color: whitesmoke;
+            text-shadow: 5px 4px 3px black;
+        }
+        button{
+            border: 2px solid black;
+            color: green;
+            background-color: lightblue;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        ul{
+            float: right;
+            margin-right: 40px;
+        }
+        li{
+            display: inline-block;
+        }
+        a{
+            text-transform: uppercase;
+            color: white;
+        }
+        #hrt{
+            background-color: darkslategray;
+        }
+          #main{
+            overflow: auto;
+            padding-bottom: 100px;
+        }
+        #footer{
+            background-color: darkslategray;
+            position: relative;
+            height: 100px;
+            margin-top: 100px;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="container-fluit">
+    <header id="hrt">
+        <br>
+         <ul><li><a href="../contact.html">Contact</a></li></ul>
+        <ul><li><a href="../about.html">About</a></li></ul>
+        <ul><li><a href="../index.html">Home</a></li></ul>
+       
+       </ul><br><br>
+    </header>
+</div>
+    <center>
+        <h2 class="bg-primary"><br><b><b><b>Math Book : Rectangle Perimeter</b></b><br><br></b></h2><br><br>
+        <div>
+            <fieldset class="bg-white ml-3 mr-3">
+                <br>
+                <br>
+            <form action="">
+            <label for=""><h3><b><b><b>Enter Height Value</b></b></b></h3></label><br>
+            <input type="text" name="" id="height" required><br><br>
+
+            <label for=""><h3><b><b><b>Enter Width Value</b></b></b></h3></label><br>
+            <input type="text" name="" id="width" required><br><br>
+
+            <button onclick="show()" class="btn btn-primary">Show Perimeter</button>
+        </form><br><br>
+    </fieldset>
+        </div>
+    </center>
+    <!--  start footer    -->
+<br><br><br>
+<footer id="footer">
+    <br>
+               <ul><li><a href="../term.html">term and condition</a></li></ul>
+              <ul><li><a href="../privacy.html">Privacy policy</a></li></ul>
+              
+             
+             </ul><br><br>
+      </footer>
+
+    <script>
+        function show(){
+            let height =  document.getElementById('height').value;
+            let width =  document.getElementById('width').value;
+
+            let result = height*2+width*2;
+            alert(`Rectangle Premiter is = ${result}`);
+            
+        }
+    </script>
+</body>
+</html>

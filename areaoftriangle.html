@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+    <title>AreaOfTriangle</title>
+    <style>
+        body{
+            /* background-image: linear-gradient(to left,pink,grey); */
+            background-color:pink;
+        }
+        div{
+            text-align: center;
+        }
+        h1{
+            background-color: aquamarine;
+            color: blue;
+            text-shadow: 5px 4px 3px yellow;
+        }
+        input{
+            border: 2px solid black;
+            padding: 5px;
+        }
+        label{
+            font-size: large;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        ul{
+            float: right;
+            margin-right: 40px;
+        }
+        li{
+            display: inline-block;
+        }
+        a{
+            text-transform: uppercase;
+            color: white;
+        }
+        #hrt{
+            background-color: darkslategray;
+        }
+          #main{
+            overflow: auto;
+            padding-bottom: 100px;
+        }
+        #footer{
+            background-color: darkslategray;
+            position: relative;
+            height: 100px;
+            margin-top:200px;
+            clear: both;
+        }
+        #f{
+            background-color: white;
+           
+
+        }
+    </style>
+</head>
+<body>
+    
+<div class="container-fluit">
+    <header id="hrt">
+        <br>
+         <ul><li><a href="../contact.html">Contact</a></li></ul>
+        <ul><li><a href="../about.html">About</a></li></ul>
+        <ul><li><a href="../index.html">Home</a></li></ul>
+       
+       </ul><br><br>
+    </header>
+</div>
+
+    <div>
+        <h1><br><b><b><b>Math Book : AreaOfTriangle</b></b></b><br><br></h1>
+        <br><br>
+        <center>
+            <fieldset id="f" class="ml-3 mr-3"><br><br>
+        <label for="base"><h3><b><b><b>Enter Base Value</b></b></b></h3></label><br>
+        <input type="text" name="" id="base"><br><br>
+
+        <label for="height"><h3><b><b><b>Enter Height Value</b></b></b></h3></label><br>
+        <input type="text" name="" id="height"><br><br>
+        <input type="button" class="btn btn btn-dark" value="ShowArea" onclick="cal()">
+        <br><br>
+    </fieldset>
+</center>
+
+<!--  start footer    -->
+<br><br><br>
+<footer id="footer">
+    <br>
+               <ul><li><a href="../term.html">term and condition</a></li></ul>
+              <ul><li><a href="../privacy.html">Privacy policy</a></li></ul>
+              
+             
+             </ul><br><br>
+      </footer>
+        <script>
+            const cal=()=>{
+                const a=document.getElementById('base').value;
+                const b=document.getElementById('height').value;
+                 
+                let c=(a*b)/2;
+                alert("AreaOfTringle = "+c);
+            }
+        </script>
+        
+    </div>
+
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

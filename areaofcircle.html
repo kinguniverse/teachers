@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Of Circle</title>
+    
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        body{
+          background-image: linear-gradient(to left,pink,lightblue);
+        }
+        input{
+            border: 2px solid black;
+        }
+        h1{
+            text-shadow: 5px 4px 3px pink;
+
+            color: blue;
+        }
+        button{
+            border: 2px solid black;
+         }
+         header{
+            background-color:teal;
+            text-align: center;
+        }
+        h1{
+            /* text-shadow:5px 4px 3px black; */
+            color: white;
+        }
+        .card:hover{
+          box-shadow: 10px 10px 34px 0px rgba(97, 77, 77, 0.75);
+-webkit-box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75);
+           /* background-color:lightblue;
+           color:black; */
+           /* text-shadow: 5px 4px 3px burlywood; */
+            
+         }
+         *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        ul{
+            float: right;
+            margin-right: 40px;
+        }
+        li{
+            display: inline-block;
+        }
+        a{
+            text-transform: uppercase;
+            color: white;
+        }
+        #hrt{
+            background-color: darkslategray;
+        }
+          #main{
+            overflow: auto;
+            padding-bottom: 100px;
+        }
+        #footer{
+            background-color: darkslategray;
+            position: relative;
+            height: 100px;
+            margin-top: -100p;
+            clear: both;
+        }
+ 
+    </style>
+</head>
+<body>
+    
+<div class="container-fluit">
+    <header id="hrt">
+        <br>
+         <ul><li><a href="../contact.html">Contact</a></li></ul>
+        <ul><li><a href="../about.html">About</a></li></ul>
+        <ul><li><a href="../index.html">Home</a></li></ul>
+       
+       </ul><br><br>
+    </header>
+</div>
+    <header><br><br><h1><b>Math Book : Area Of Circle</b></h1><br><br></header><br><br>
+<center>
+    <div class="container">
+        <div class="row">
+       
+        <div class="col" id="demo">
+        <div class="card">
+        <div class="card-body ht">
+            <label for=""><h1 style="color:blue"><b>Enter Redius value</b></h1></label><br>
+            <input type="text" name="" id="a"><br><br>
+
+
+            <input type="button" class="btn btn-primary"  value="Area Of Circle" onclick="myfun()">
+        </fieldset>
+
+    </div>
+        </div>
+        </div>
+
+
+
+<!-- row closed -->
+</div>
+<!-- container closed -->
+</div>
+<!--  start footer    -->
+<br><br><br>
+<footer id="footer">
+    <br>
+               <ul><li><a href="../term.html">term and condition</a></li></ul>
+              <ul><li><a href="../privacy.html">Privacy policy</a></li></ul>
+              
+             
+             </ul><br><br>
+      </footer>
+</center>
+
+
+
+
+
+<!-- 
+    <center>
+        <div><fieldset>
+            <label for=""><b>Enter Redius value</b></label><br>
+            <input type="text" name="" id="a"><br><br>
+
+
+            <input type="button"  value="Area Of Circle" onclick="myfun()">
+        </fieldset>
+        </div>
+    </center> -->
+
+    <script>
+        function myfun(){
+            var x = document.getElementById('a').value;
+
+            var z =(x*x*3.14);
+            alert(z)
+        }
+    </script>
+</body>
+</html>
