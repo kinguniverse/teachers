@@ -14,11 +14,13 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <title>keshab</title>
+    <title>Write a story</title>
     <style>
            
          body{
-            background-image: linear-gradient(to left,pink,lightblue);
+            /* background-image: linear-gradient(to left,pink,lightblue);  */
+            background-color:white;
+             
         }
         #header{
             color:black;
@@ -43,19 +45,45 @@
                       text-decoration: none;
                       list-style: none;
                   }
-                  li{
-                      margin-left: 10px;
-                      display:flex;
+                  
+                  ul{
+                      float: right;
+                      margin-right: 7px;
                   }
-                  #heads{
-                      background-color: lightcoral;
-                  }
+                  /* #heads{
+                      background-color: rgb(197, 176, 176)76, 176);
+                  } */
                   #keshab{
-                      background-color: lightgreen;
-                      display: flex;
+                      background-color: blue;
+                      
+                      
+                      
                   }
+                #h{
+                    background-color: aqua;
+                    text-align: center;
+                     
+                } 
+                a{  
+                    text-transform: uppercase;
+                    color: white;
+                    margin-right: 10px;
+                }
+                #header2{
+                    color: blue;
+                    text-shadow: 5px 5px 3px black;
+                }
+               #txt{
+                   border: 3px solid black;
+               }
+               #title{
+                   border: 3px solid black;
+               }
+               #span{
+                font-size: x-large;
+               }
                 
- 
+              
         </style>
 
 
@@ -70,16 +98,15 @@
 </head>
 <body>
     <header id="keshab">
-        <br><br><br> 
+          <br> 
          <ul><li><a href="https://kinguniverse.github.io/teachers/contact.html"><b><b><b>Contact</b></b></b></a></li></ul>
         <ul><li><a href="https://kinguniverse.github.io/teachers/about.html"><b><b><b>About</b></b></b></a></li></ul>
         <ul><li><a href="https://kinguniverse.github.io/teachers/"><b><b><b>Home</b></b></b></a></li></ul>  
- 
+ <br><br> 
        </ul><br>
-       <center><h1 ><b><b><b><i>Write a story</i></b></b></b></h1></center>
 
     </header>
-    
+    <header id="h"><br><h1 id="header2"><b><b><b>Write a story</b></b></b></h1><br><br></header>
     
     
     
@@ -98,15 +125,20 @@
 
 </div> -->
  <!-- <center><h1 ><b><b><b><i>My Dream World</i></b></b></b></h1></center> -->
- <div class="container">
-   
+
+ <div class="container mt-5" id="st">
+    <button class="btn btn-outline-primary float-right" id="print" onclick="myfun()"><b><b>print</b></b></button><br><br><hr>
+
         <!-- <p id="p">this is praraph  </p> -->
-       <center> <textarea   name="" id="title" cols="18" rows="1" placeholder="Title"></textarea></center>
-      <center><h1 id="header"><b><b></b></b></h1></center> 
+       <center> <textarea   name="" id="title" cols="18" rows="1" placeholder="Title" class="form-control text-center"></textarea></center>
+        
+      <center><h1 id="header"><b><b></b></b></h1></center><br><br> 
             <span id="result">  <span>
+       
+
             <form action="#">
             <div class="form-group">
-         <textarea id="txt" placeholder="keshab" name="" id="" cols="30" rows="10" class="form-control"> </textarea>
+         <textarea id="txt" placeholder=" write now" name="" id="" cols="30" rows="10" class="form-control"> </textarea>
             </div>      
              </form>
             <br>
@@ -128,7 +160,7 @@
 </div>
 <br><br><br><br>
  <div class="container mt-10">
-    <button class="btn btn-outline-primary" id="print" onclick="myfun()"><b><b>print</b></b></button>
+    <!-- <button class="btn btn-outline-primary" id="print" onclick="myfun()"><b><b>print</b></b></button> -->
 
  </div>
  <div id="google_translate_element"></div><br>
@@ -149,7 +181,7 @@
               var b=$('#title').val();
               $('#header').text(b);
             });
-            $('#btnclic').click(function(){
+            $('#btnclic').click(function(){ 
              
               $('#title').hide();
         });
@@ -170,10 +202,24 @@
  })
 
 
+ $(document).ready(function(){
+     $('#print').hide();
+     $('#btnclic').click(function(){
+        $('#print').show();
+     }) 
+     $('#print').click(function(){
+        $(this).hide();
+     }) 
+ })
 
-        function myfun(){
-            window.print();
-        }
+ 
+       
+            
+ function myfun(){
+ 	 window.print();
+ 
+ }
+        
        
      </script>
 
