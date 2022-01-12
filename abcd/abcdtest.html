@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Keshab Alphabets (Capital)</title>
+    <style> 
+    
+         /* #fs{ 
+            background-image: linear-gradient(to top ,red,lightblue);
+
+         } */
+         
+        #msg{
+             font-size:200px;
+        }
+        .btns{
+            padding: 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body> <center>
+    <button onclick=myfun() class="btns">Start Test</button> <br> <br>
+    <fieldset id="fs">
+    <h1 id="msg"></h1>
+
+</fieldset></center>
+
+    <script>
+        var word=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","w","x","Y","Z"];
+        function myfun(){
+            const random=Math.floor(Math.random()*word.length);
+msg.innerText=word[random];
+        }
+    </script>
+</body>
+</html>
