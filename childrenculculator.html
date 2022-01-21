@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children calculator</title>
+     <!-- bootstrapt cdn -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <!-- jquary cdn -->
+     
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+         <style>
+             body{
+                 background-image: linear-gradient(to top,pink,grey);
+             }
+             #add{
+                 background-image: linear-gradient(to top,lightgreen,pink);
+             }
+             #sub{
+                 background-image: linear-gradient(to top,pink,lightgreen);
+             }
+             #mul{
+                 background-image: linear-gradient(to top,lightgreen,pink);
+             }
+             #div{
+                 background-image: linear-gradient(to top,pink,lightgreen);
+             }
+             fieldset{
+                 background-image: linear-gradient(to left,pink,lightgreen);
+             }
+             h2{
+                 background-color: turquoise;
+             }
+         </style>
+         
+</head>
+<body>
+<div class="container-fluit">
+    <h2 style="color: blue; text-shadow: 5px 4px 3px white;" class="text-center"><b> <br> Calculator For Children <br><br></b></h2> <br><br>
+</div>
+    <!-- second container -->
+    <div class="container"> <br><br>
+
+<b><b>First Number</b></b>  : <input type="text" id="first"> <br><br>
+<b><b>Second Number</b></b>  : <input type="text" id="second"> <br><br>
+
+<fieldset class="text-center"> <br>
+<span id="fir"></span> <br>
+<span id="sec"></span> <hr>
+<span id="result"></span> 
+<br>
+</fieldset>
+<br><br>
+ <button onclick="add()" style="padding: 20px;" id="add"><h1><b><b>+</b></b></h1></b></b></button> 
+ <Button onclick="sub()" style="padding: 20px;" id="sub"><h1><b><b>-</b></b></h1></Button>
+ <Button onclick="mul()" style="padding: 20px;" id="mul"><h1><b><b>x</b></b></h1></Button>
+ <Button onclick="divide()" style="padding: 20px;" id="div"><h1><b><b>/</b></b></h1></Button>
+  
+
+
+
+    </div>
+<br><br>
+
+    <script>
+        function add(){
+            var f = document.getElementById('first').value;
+            var s = document.getElementById('second').value;
+            document.getElementById('fir').innerHTML=f; 
+            document.getElementById('sec').innerHTML=s;
+          var a = parseInt(f)+parseInt(s);
+            document.getElementById('result').innerHTML="Add = "+a;
+            // document.write("First Number = "+f+"<br>"+"Second Number = "+s+"<hr>"+"Add Two Number = "+a);
+            // document.write(s);
+            // document.write(a);
+
+
+
+        }
+
+        // ---------------------------- sub -------------------------------------------------
+        function sub(){
+            var f = document.getElementById('first').value;
+            var s = document.getElementById('second').value;
+            document.getElementById('fir').innerHTML=f; 
+            document.getElementById('sec').innerHTML=s;
+             document.getElementById('result').innerHTML=f-s;
+
+ 
+
+
+        }
+
+        // ------------------------------- mul ----------------------------------------------------
+        function mul(){
+            var f = document.getElementById('first').value;
+            var s = document.getElementById('second').value;
+            document.getElementById('fir').innerHTML=f; 
+            document.getElementById('sec').innerHTML=s;
+             document.getElementById('result').innerHTML="Mul = "+f*s;
+
+         
+
+
+
+        }
+
+
+        // ------------------------ divide----------------------------------------------------
+        function divide(){
+            var f = document.getElementById('first').value;
+            var s = document.getElementById('second').value;
+            document.getElementById('fir').innerHTML=f; 
+            document.getElementById('sec').innerHTML=s;
+          
+            document.getElementById('result').innerHTML="Div = "+f/s;
+
+           
+
+
+
+        }
+
+
+       
+    </script>
+</body>
+</html>
